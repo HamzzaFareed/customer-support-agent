@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar"
 import ChatWindow from "./components/ChatWindow"
 import axios from "axios"
 
-const API = "http://localhost:8000"
+const API = "https://customer-support-agent-production-a7d9.up.railway.app"
 
 export default function App() {
   const [sessions, setSessions] = useState([])
