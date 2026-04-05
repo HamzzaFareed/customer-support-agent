@@ -9,12 +9,18 @@ load_dotenv()
 CHROMA_PATH = Path("memory/chroma_db")
 COLLECTION_NAME = "support_docs"
 HF_TOKEN = os.getenv("HF_TOKEN")
-EMBED_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
+EMBED_URL = "https://router.huggingface.co/hf-inference/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
 
 def get_embedding(text):
     headers = {"Authorization": f"Bearer {HF_TOKEN}"}
     response = requests.post(EMBED_URL, headers=headers, json={"inputs": [text], "options": {"wait_for_model": True}})
-    return response.json()[0]
+    result = response.json()
+    if isinstance(result, dict) and "error" in result:
+        raise ValueError(f"HuggingFace API error: {result['error']}")
+    item = result[0]
+    if isinstance(item, list) and isinstance(item[0], list):
+        return item[0]
+    return item
 
 def retrieve(query: str, n_results: int = 3) -> list[str]:
     client = chromadb.PersistentClient(path=str(CHROMA_PATH))
