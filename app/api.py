@@ -4,20 +4,29 @@ from pydantic import BaseModel
 import uuid
 from agent.agent import chat
 from agent.memory import clear_session, get_history
+from agent.ingest import ingest
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+@app.on_event("startup")
+async def startup_event():
+    ingest()
+
 class MessageRequest(BaseModel):
     session_id: str
     message: str
+
+@app.get("/")
+def root():
+    return {"status": "ok"}
 
 @app.get("/session/new")
 def new_session():

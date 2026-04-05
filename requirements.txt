@@ -3,6 +3,9 @@ chromadb
 sentence-transformers
 langchain
 langchain-community
+langchain-text-splitters
 python-dotenv
 pypdf
-rich                  # makes the CLI output look nice
+fastapi
+uvicorn
+pydantic
