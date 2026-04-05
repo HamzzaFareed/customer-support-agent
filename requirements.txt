@@ -1,6 +1,5 @@
 groq
 chromadb
-sentence-transformers
 langchain
 langchain-community
 langchain-text-splitters
@@ -9,4 +8,4 @@ pypdf
 fastapi
 uvicorn
 pydantic
-torch --index-url https://download.pytorch.org/whl/cpu
+requests
