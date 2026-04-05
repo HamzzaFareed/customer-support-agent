@@ -1,0 +1,46 @@
+NovaSaaS - Frequently Asked Questions
+
+Q: What is NovaSaaS?
+A: NovaSaaS is a cloud-based project management platform that helps teams plan, track, and collaborate on work in real time. It supports task management, timelines, file sharing, and team communication all in one place.
+
+Q: How do I create an account?
+A: Go to novasaas.com/signup, enter your email and a password, then verify your email address. You can also sign up using Google or Microsoft SSO.
+
+Q: Is there a free plan?
+A: Yes. The Free plan supports up to 3 users and 5 active projects. No credit card is required to get started.
+
+Q: How do I invite team members?
+A: Go to Settings > Team > Invite Members. Enter their email addresses and choose a role (Admin, Member, or Viewer). They will receive an invite link valid for 48 hours.
+
+Q: Can I use NovaSaaS on mobile?
+A: Yes. NovaSaaS has iOS and Android apps available on the App Store and Google Play. All your data syncs in real time across devices.
+
+Q: How do I reset my password?
+A: Click "Forgot password" on the login page and enter your email. You will receive a reset link within 2 minutes. Check your spam folder if it does not arrive.
+
+Q: Can I change my email address?
+A: Yes. Go to Settings > Profile > Contact Info and update your email. You will need to verify the new address before the change takes effect.
+
+Q: How do I delete my account?
+A: Go to Settings > Account > Danger Zone > Delete Account. This action is permanent and cannot be undone. All your projects and data will be erased immediately.
+
+Q: Does NovaSaaS support dark mode?
+A: Yes. Go to Settings > Appearance and toggle Dark Mode on or off. The setting is saved per device.
+
+Q: How do I contact support?
+A: You can reach our support team at support@novasaas.com or use the live chat widget in the bottom right corner of the app. Support hours are Monday to Friday, 9am to 6pm EST.
+
+Q: Is my data backed up?
+A: Yes. NovaSaaS performs automatic backups every 24 hours. Pro and Enterprise customers also have access to on-demand backups from the Settings panel.
+
+Q: Can I export my data?
+A: Yes. Go to Settings > Data > Export. You can export projects, tasks, and files as a ZIP archive in CSV and JSON formats.
+
+Q: Does NovaSaaS integrate with other tools?
+A: Yes. NovaSaaS integrates with Slack, Google Drive, GitHub, Zapier, and Notion. More integrations are available in the Integrations marketplace under Settings.
+
+Q: What happens when I exceed my plan limits?
+A: You will receive an email notification when you are close to your limit. If you exceed it, new projects or users will be locked until you upgrade or free up space.
+
+Q: Is NovaSaaS GDPR compliant?
+A: Yes. NovaSaaS is fully GDPR compliant. You can request a data export or deletion at any time from Settings > Data or by emailing privacy@novasaas.com.

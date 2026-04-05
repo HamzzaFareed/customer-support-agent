@@ -1,0 +1,62 @@
+NovaSaaS - Troubleshooting Guide
+
+ISSUE 1: Cannot log in to my account
+Symptoms: Login page shows an error or spins indefinitely.
+Steps to fix:
+1. Make sure you are using the correct email address associated with your account.
+2. Try resetting your password via the "Forgot password" link on the login page.
+3. Clear your browser cache and cookies, then try again.
+4. Disable browser extensions (especially ad blockers) and retry.
+5. Try a different browser or incognito/private mode.
+6. If your account was created via Google or Microsoft SSO, use the "Continue with Google/Microsoft" button instead of email/password.
+7. If none of the above work, contact support@novasaas.com with your email address.
+
+ISSUE 2: Email verification link not arriving
+Symptoms: No verification email received after signing up or changing email.
+Steps to fix:
+1. Check your spam or junk folder.
+2. Search your inbox for "noreply@novasaas.com".
+3. Wait up to 5 minutes — delivery can be delayed.
+4. Click "Resend verification email" on the confirmation screen.
+5. Make sure your email provider is not blocking novasaas.com. Add noreply@novasaas.com to your safe senders list.
+6. Try signing up with a different email address (Gmail works best).
+
+ISSUE 3: App is slow or not loading properly
+Symptoms: Pages take a long time to load, content does not appear, or the app freezes.
+Steps to fix:
+1. Check your internet connection and run a speed test.
+2. Hard refresh the page (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac).
+3. Clear your browser cache and cookies.
+4. Disable browser extensions one by one to find a conflict.
+5. Try a different browser (Chrome or Firefox recommended).
+6. Check the NovaSaaS status page at status.novasaas.com for any ongoing incidents.
+7. If using the mobile app, force-close it and reopen. Try uninstalling and reinstalling if the issue persists.
+
+ISSUE 4: File upload is failing
+Symptoms: Files fail to upload or get stuck at a certain percentage.
+Steps to fix:
+1. Check the file size. Free plan is limited to 25MB per file. Pro plan allows up to 250MB per file.
+2. Check that your workspace has not exceeded its total storage limit. Go to Settings > Storage to review.
+3. Make sure the file type is supported. NovaSaaS supports: PDF, DOC, DOCX, XLS, XLSX, PNG, JPG, GIF, MP4, ZIP.
+4. Try uploading from a different browser or the desktop app.
+5. If uploading via API, confirm your API token has write permissions.
+6. Contact support if upload fails consistently for files within the size and type limits.
+
+ISSUE 5: Team members not receiving invite emails
+Symptoms: Invited users say they never got the invite link.
+Steps to fix:
+1. Ask the invitee to check their spam folder for an email from noreply@novasaas.com.
+2. Go to Settings > Team and confirm the invite shows as "Pending" — if it shows "Accepted" they may already have an account.
+3. Cancel the existing invite and resend it.
+4. Make sure you entered the correct email address for the invitee.
+5. If the invitee uses a company email, their IT/security policies may be blocking the email. Try inviting a personal email address to test.
+
+ISSUE 6: Notifications are not working
+Symptoms: No email or in-app notifications received for task updates, mentions, or due dates.
+Steps to fix:
+1. Go to Settings > Notifications and confirm notifications are enabled for the relevant events.
+2. Check that the correct email address is listed under Settings > Profile.
+3. Check your spam folder for notification emails from notifications@novasaas.com.
+4. For in-app notifications, make sure your browser allows notifications from novasaas.com (check browser site settings).
+5. On mobile, go to your device Settings > NovaSaaS > Notifications and ensure they are enabled.
+6. If using Slack integration, re-authenticate the Slack connection under Settings > Integrations.

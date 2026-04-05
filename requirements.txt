@@ -1,0 +1,8 @@
+groq
+chromadb
+sentence-transformers
+langchain
+langchain-community
+python-dotenv
+pypdf
+rich                  # makes the CLI output look nice
