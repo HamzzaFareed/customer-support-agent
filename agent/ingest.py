@@ -12,11 +12,11 @@ DOCS_PATH = Path("data/docs")
 CHROMA_PATH = Path("memory/chroma_db")
 COLLECTION_NAME = "support_docs"
 HF_TOKEN = os.getenv("HF_TOKEN")
-EMBED_URL = "https://router.huggingface.co/hf-inference/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
+EMBED_URL = "https://router.huggingface.co/hf-inference/models/sentence-transformers/all-MiniLM-L6-v2/pipeline/feature-extraction"
 
 def get_embeddings(texts):
     headers = {"Authorization": f"Bearer {HF_TOKEN}"}
-    response = requests.post(EMBED_URL, headers=headers, json={"inputs": texts, "options": {"wait_for_model": True}})
+    response = requests.post(EMBED_URL, headers=headers, json={"inputs": texts})
     result = response.json()
     embeddings = []
     for item in result:
